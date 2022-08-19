@@ -1,11 +1,11 @@
-0	1	mikroCPIC1618.exe -MSF -DBG -pP16F84A -DL -O11111114 -fo4 -N"C:\Users\pc\Desktop\Merc-main\MercLock.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\pc\Desktop\Merc-main\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -IP"C:\Users\pc\Desktop\Merc-main\" "MercLock.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F84A -DL -O11111114 -fo4 -N"C:\Users\pc\Desktop\Hrant\Merc-main\MercLock.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\pc\Desktop\Hrant\Merc-main\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -IP"C:\Users\pc\Desktop\Hrant\Merc-main\" "MercLock.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
 hint: 0	1139	Available RAM: 52 [bytes], Available ROM: 1024 [bytes]	 
 diagnostics: 0	122	Compilation Started	MercLock.c
-diagnostics: 82	123	Compiled Successfully	MercLock.c
+diagnostics: 104	123	Compiled Successfully	MercLock.c
 diagnostics: 0	127	All files Compiled in 94 ms	 
-hint: 0	1144	Used RAM (bytes): 10 (19%)  Free RAM (bytes): 42 (81%)	Used RAM (bytes): 10 (19%)  Free RAM (bytes): 42 (81%)
-hint: 0	1144	Used ROM (program words): 152 (15%)  Free ROM (program words): 872 (85%)	Used ROM (program words): 152 (15%)  Free ROM (program words): 872 (85%)
+hint: 0	1144	Used RAM (bytes): 14 (27%)  Free RAM (bytes): 38 (73%)	Used RAM (bytes): 14 (27%)  Free RAM (bytes): 38 (73%)
+hint: 0	1144	Used ROM (program words): 216 (21%)  Free ROM (program words): 808 (79%)	Used ROM (program words): 216 (21%)  Free ROM (program words): 808 (79%)
 diagnostics: 0	125	Project Linked Successfully	MercLock.mcppi
-diagnostics: 0	128	Linked in 16 ms	 
-diagnostics: 0	129	Project 'MercLock.mcppi' completed: 125 ms	 
-diagnostics: 0	103	Finished successfully: 12 Jul 2022, 14:08:40	MercLock.mcppi
+diagnostics: 0	128	Linked in 15 ms	 
+diagnostics: 0	129	Project 'MercLock.mcppi' completed: 140 ms	 
+diagnostics: 0	103	Finished successfully: 18 Aug 2022, 11:11:46	MercLock.mcppi

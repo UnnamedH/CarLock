@@ -27,6 +27,7 @@ c
 c_bit
 comfrem
 compare_double
+current
 dc
 dc_bit
 delay_100ms
@@ -64,6 +65,7 @@ eeie
 eeie_bit
 eeif
 eeif_bit
+enabled
 equals_double
 f
 fixsign32
@@ -117,6 +119,7 @@ pclath
 port_to_tris_offset
 porta
 portb
+pressed
 ps0
 ps0_bit
 ps1

@@ -1,4 +1,7 @@
-#line 1 "C:/Users/pc/Desktop/Hrant/Merc-main/MercLock.c"
+#line 1 "C:/Users/pc/Desktop/CarLock/CarLock.c"
+
+
+
 static int time = 0;
 static int x = 0;
 
@@ -9,11 +12,11 @@ const int interval = 20;
 
 const float inTimeSec = 0.65;
 const int inTime = inTimeSec * 1000;
-const float onTimeSec = 3.7;
-const int onTime = onTimeSec * 1000;
+const float outTimeSec = 3.7;
+const int outTime = outTimeSec * 1000;
 
 const int inTimeCheck = inTime / interval;
-const int onTimeCheck = onTime / interval;
+const int outTimeCheck = outTime / interval;
 
 int current = 0;
 
@@ -31,8 +34,8 @@ void lock()
  unlocked = 0;
 
  enabled = 0;
+ current = 1;
 
- pressed = 1;
 }
 
 void unlock()
@@ -45,8 +48,8 @@ void unlock()
  locked = 0;
 
  enabled = 0;
+ current = 2;
 
- pressed = 1;
 }
 
 void main()
@@ -55,7 +58,7 @@ void main()
 
  do
  {
- if (PORTB.B1 == 1 && PORTB.B2 == 1 && enabled == 1 && pressed == 0)
+ if (PORTB.B1 == 1 && PORTB.B2 == 1 && enabled == 1 && current != 1)
  {
  time++;
 
@@ -65,7 +68,7 @@ void main()
  lock();
  }
  }
- else if (PORTB.B1 == 0 && PORTB.B2 == 0 && enabled == 1 && pressed == 0)
+ else if (PORTB.B1 == 0 && PORTB.B2 == 0 && enabled == 1 && current != 2)
  {
  time++;
 
@@ -79,7 +82,7 @@ void main()
  {
  x++;
 
- if (x >= onTimeCheck)
+ if (x >= outTimeCheck)
  {
  locked = 0;
  unlocked = 0;
@@ -90,6 +93,7 @@ void main()
  else if (PORTB.B1 == 0 && PORTB.B2 == 1)
  {
  pressed = 0;
+ current = 0;
  time = 0;
  PORTB = 0x00;
  }

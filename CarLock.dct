@@ -110,10 +110,10 @@ not_to
 not_to_bit
 nrm3232
 nrm4032
-ontime
-ontimecheck
-ontimesec
 option_reg
+outtime
+outtimecheck
+outtimesec
 pcl
 pclath
 port_to_tris_offset
